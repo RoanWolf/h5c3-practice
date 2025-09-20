@@ -9,9 +9,11 @@ body {
 }
 .container {
   width: 50%;
-  margin:50px auto;
+  margin: 50px auto;
 
   border: 5px solid #000;
+
+  position: relative;
 }
 
 .header-title h1 {
@@ -33,7 +35,6 @@ body {
 .product-price {
   font-weight: bold;
   font-size: 24px;
- 
 }
 
 .product-shipping {
@@ -44,44 +45,88 @@ body {
 }
 
 p {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
-.product-moreInfo:link{
-    color: #000;
+.product-moreInfo:link {
+  color: #000;
 }
 
-.product-moreInfo:hover{
-    color: #1098ad;
+.product-moreInfo:hover {
+  color: #1098ad;
 }
-
 
 .product-details {
-    text-transform: uppercase;
-    margin-top:20px;
-    margin-bottom: 20px;
-    
+  text-transform: uppercase;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 li {
-    margin-left: 20px;
-    list-style: square;
-    margin-bottom: 20px;
+  margin-left: 20px;
+  list-style: square;
+  margin-bottom: 20px;
 }
 
-
-.add-product{
-    background-color: #000;
-    color: #FFF;
-    padding: 15px;
-    text-transform: uppercase;
-    width: 100%;
-    cursor: pointer;
-    border: none ;
-    border-top:5px solid #000;
+.add-product {
+  background-color: #000;
+  color: #fff;
+  padding: 15px;
+  text-transform: uppercase;
+  width: 100%;
+  cursor: pointer;
+  border: none;
+  border-top: 5px solid #000;
 }
 
 .add-product:hover {
-    background-color: #FFF;
-    color: #000;
+  background-color: #fff;
+  color: #000;
+}
+
+.prodcut-status {
+  background-color: red;
+  display: inline-block;
+  padding: 7px 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: absolute;
+
+  top: -20px;
+  left: -40px;
+}
+
+.color {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin-right: 20px;
+  margin-top: 30px;
+}
+
+.color-black {
+  background-color: #000;
+}
+.color-red {
+  background-color: #ec2f2f;
+}
+
+.color-yellow {
+  background-color: #f0bf1e;
+}
+
+.color-green {
+  background-color: #90cc20;
+}
+
+.color-brown {
+  background-color: #885214;
+}
+
+.color-blue {
+  background-color: #1098ad;
+}
+
+.color:first-child {
+  margin-left: 10px;
 }
